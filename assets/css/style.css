@@ -139,6 +139,7 @@ li {
   margin: 0 0 30px;
 }
 
+.form-control input,
 #txt-input:focus{ outline: none; }
 .hide-me{ visibility: hidden; }
 
@@ -197,13 +198,15 @@ li {
 
 .status{
   right: 20%;
-  bottom: 35px;
+  bottom: 40px;
 }
 
+img{ width: 100%;}
+
 .weather-icon{
-  right: 20%;
-  top: 40px;
-  
+  right: 15%;
+  top: 25px;
+  width: 20%;
 }
 
 /*=================================
@@ -218,10 +221,13 @@ li {
 
 footer{
   text-align: center;
-  padding: 5px;
+  padding: 5px 0;
   color: #ffffff;
   font-size: 12px;
   background-color: #505050;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 
