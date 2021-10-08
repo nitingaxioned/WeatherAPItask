@@ -159,6 +159,51 @@ li {
   border-radius: 4px;
 }
 
+/* Card Css */
+
+.output-block{ margin: 40px 0 70px; }
+
+.city-card{
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  background-color: #eee;
+  color: #424242;
+}
+
+.city-name{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.min-max,
+.date{
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.temperature{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.status,
+.weather-icon{ position: absolute; }
+
+.status{
+  right: 20%;
+  bottom: 35px;
+}
+
+.weather-icon{
+  right: 20%;
+  top: 40px;
+}
 
 /*=================================
   main styling ends here
