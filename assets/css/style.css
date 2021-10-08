@@ -203,6 +203,7 @@ li {
 .weather-icon{
   right: 20%;
   top: 40px;
+  
 }
 
 /*=================================
@@ -215,7 +216,13 @@ li {
 
 
 
-
+footer{
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #505050;
+}
 
 
 
