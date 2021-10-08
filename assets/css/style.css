@@ -111,7 +111,7 @@ li {
   font-size: 28px;
   text-align: center;
   font-weight: bolder;
-  color: #71b148;
+  color: #8cb7c0;
   padding: 30px;
 }
 
@@ -123,11 +123,41 @@ li {
   main styling starts here
 =================================*/
 
+/* Form Css */
 
+.form-control,
+.form-group{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
+#txt-input{
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 30px;
+}
 
+#txt-input:focus{ outline: none; }
+.hide-me{ visibility: hidden; }
 
+.error{
+  position: absolute;
+  top: 35px;
+  font-size: 14px;
+  color: #ff5555;
+  font-weight: bold;
+}
 
+.form-control input{
+  margin: 0 2%;
+  background-color: #8cb7c0;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 4px;
+}
 
 
 /*=================================
