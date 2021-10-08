@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Weather API Project</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
@@ -24,18 +24,47 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="wrapper">
+        <p class="haedding">Weather API Project</p>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="wrapper">
+        <div class="form-container">
+          <form class="form-body">
+            <div class="form-group">
+              <input type="text" id="txt-input" placeholder="Enter City Name Here">
+              <span class="error">An Error Occurred - City Not Found!</span>
+            </div>
+            <div class="form-control">
+              <input type="button" value="Find" id="find-btn">
+              <input type="reset" value="Clear" id="clear-btn">
+            </div>
+          </form>
+        </div>
+        <div class="output-block">
+          <div class="city-card">
+            <p class="city-name">Badlapur</p>
+            <p class="date">27 Aug 2001</p>
+            <p class="temperature">25 &deg;C</p>
+            <p class="min-max">min max of the day</p>
+            <span class="status">sunny</span>
+            <div class="weather-icon">
+              <img src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
-
+    <footer>
+      <div class="wrapper">
+        <p>Made By NDG</p>
+      </div>      
     </footer>
     <!--footer section end-->
 
