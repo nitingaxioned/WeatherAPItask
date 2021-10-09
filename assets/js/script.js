@@ -15,6 +15,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 // Event Listener Added
 
+inputBox.addEventListener("focus", function(){errorNode.classList.add("hide-me")});
 document.getElementById("find-btn").addEventListener("click", validate);
 document.getElementById("clear-btn").addEventListener("click", function(){
     cardNode.classList.add("hide-me");
@@ -56,7 +57,7 @@ function display(data){
     minMaxTemp.innerHTML = "Min. "+Math.floor(data.main.temp_min)+" &deg;C &nbsp; Max. "+Math.ceil(data.main.temp_max)+" &deg;C";
     weatherStatus.innerHTML = data.weather[0].main;
     cardtime.innerHTML = getDisplayDate();
-    weatherIcon.innerHTML = '<img src="https://openweathermap.org/img/wn/'+data.weather[0].icon+'.png" alt="Weather Icon">';
+    weatherIcon.innerHTML = '<img src="https://openweathermap.org/img/wn/'+data.weather[0].icon+'@2x.png" alt="Weather Icon">';
     setbg();
 }
 
@@ -70,14 +71,13 @@ function getDisplayDate(){
         timeline = " PM";
     }
     else{
-        hrs = (" AM "+hrs);
-        timeline = " PM";
+        timeline = " AM";
     }
     hrs = ("0"+hrs).slice(-2);
     return dateObj.getDate()+" "+month[dateObj.getMonth()]+" &nbsp; "+hrs+":"+("0"+dateObj.getMinutes()).slice(-2)+timeline;
 }
 
 function setbg(){
-    let card = document.querySelector(".city-card");
-    card.setAttribute("style","background-color : #fcfcfc");
+    let cardBg = document.querySelector("body");
+    cardBg.setAttribute("style","background-color : #eeee33");
 }
