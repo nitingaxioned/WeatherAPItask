@@ -111,7 +111,7 @@ li {
   font-size: 28px;
   text-align: center;
   font-weight: bolder;
-  color: #8cb7c0;
+  color: #9b73a3;
   padding: 30px;
 }
 
@@ -153,7 +153,7 @@ li {
 
 .form-control input{
   margin: 0 2%;
-  background-color: #8cb7c0;
+  background-color: #9b73a3;
   color: white;
   padding: 14px 25px;
   border: none;
@@ -208,6 +208,14 @@ img{ width: 100%;}
   top: 12px;
   width: 30%;
 }
+
+.setBackground-transprent{ background-color: transparent; }
+.setBackground-Clouds{ background-color: #cccccc; }
+.setBackground-Haze{ background-color: #dddddd; }
+.setBackground-Rain{ background-color: #444444; }
+.setBackground-Snow{ background-color: #f5f5f5; }
+.setBackground-Thunderstrom{ background-color: #0066cc; }
+.setBackground-Clear{ background-color: #8cb7c0; }
 
 /*=================================
   main styling ends here
